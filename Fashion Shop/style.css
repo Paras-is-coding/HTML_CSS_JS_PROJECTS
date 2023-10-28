@@ -49,10 +49,21 @@ html,body{
     font-size: 1.2rem;
 }
 
+.menubar{
+    display: none;
+    text-decoration: none;    
+    color: black;
+}
+#home #navbar .menubar i{
+    font-size: 2rem;
+    padding-right: 1rem;
+}
+
 #home #main {
     padding: 2rem 1rem;
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    /* justify-content: space-between; */
     overflow: hidden;
     font-family:Roboto, sans-serif;
     background-image: linear-gradient(to right,#FEE7CF,#FFDED6);
@@ -74,7 +85,7 @@ html,body{
 }
 #home #main #mainLeft h1{
     font-family: 'Aclonica', sans-serif;
-    font-size:7.5rem;
+    font-size: 10vw;
     margin: 0;
     padding-left: .4rem;
 
@@ -100,6 +111,53 @@ html,body{
 
 }
 #home #main #mainRight img{
-    height: 40vw;
+    height: 40rem;
 }
 
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 1100px) {
+   
+    #home #navbar , #home #main {
+        padding: 1rem 0rem;
+        margin: 0;
+    }
+    html,body{
+        padding: 0 1rem;
+    }
+    #home #main #mainLeft h1{
+        font-size: 14vw;    
+    }
+}
+
+@media only screen and (max-width: 770px) {
+    #home #navbar , #home #main {
+        padding: 1rem 0rem;
+        margin: 0;
+    }
+    html,body{
+        padding: 0 1rem;
+    }
+
+    .menubar{
+        display:flex;
+    }
+
+    
+    #home #navbar #links{
+        display: none;
+       
+    }    
+    #home #navbar #icons{
+        display: none;
+    }
+   
+}
